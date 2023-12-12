@@ -8,6 +8,18 @@ import Vihara.Functions as vi
 import pandas as pd
 from scipy import ndimage
 
+'''
+This was done in collaboration with Vihara. The functions and scripting used to 
+extract contours was done by Dawn, the functions and scripting used to measure the 
+contours was done by Vihara. Any function starting with "vi" was done by vihara. 
+For more information about her work, follow this link: https://github.com/ViharaJ/GetDimensions
+
+How to use: 
+    1. Change inDir to directory of images to be analyzed 
+    2. Change excelPath to the place where you would like your excel file to be saved 
+    3. Change scale if it is not already correct 
+'''
+
 # Functions
 def threshManual(img, lower, upper):
     '''
